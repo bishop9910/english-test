@@ -1,0 +1,118 @@
+@charset 'utf-8';
+@font-face{
+	font-family: yuanshen;
+	src:url(../fonts/Genshin.ttf)
+}
+.background{
+	/* background-image: url(../img/background1.png); */
+	top:0;
+	left:0;
+	position:fixed;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: -1;
+}
+.blur{
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+	top:0px;
+	left: 18%;
+	position: fixed;
+	width: 64%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.5);
+	z-index: -1;
+}
+input{
+	height:60px;
+	width:100px;
+	color:#55ff7f;
+	background-color: #55ffff;
+	font-family: yuanshen;
+	font-size: 17px;
+	text-shadow:1px 1px #8d4bbb;
+	border: #ff9910
+}
+button{
+	height:auto;
+	width:auto;
+	color:#55ff7f;
+	background-color: #55ffff;
+	font-family: yuanshen;
+	font-size: 17px;
+	text-shadow:1px 1px #8d4bbb;
+	border: #ff9910;
+}
+button:hover{
+	color:#ff9910;
+	background-color: #55ff7f;
+	transition: 0.2s;
+}
+p{
+	text-shadow:1px 1px #8d4bbb;
+	color:#ffb3a7;
+	font-size:26px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+	text-align: center;
+	font-size:50px;
+	text-shadow: 0.5px 0.5px #00ff7f;
+	color: #0055ff;
+	font-family: yuanshen;
+}
+h1{
+	text-align: center;
+	font-size:60px;
+	color: #0055ff;
+	text-shadow: 0.5px 0.5px #00ff7f;
+	font-family: yuanshen;
+}
+.word{
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+	  monospace;
+	font-size: 20px;
+  }
+.word:hover{
+	color: rgb(136, 146, 255);
+	transition: 0.2s;
+}
+.index-blur{
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+	background-color: rgba(255, 255, 255, 0.361);
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -1;
+}
+.question{
+	font-family: yuanshen;
+	font-size: 30px;
+	left:20%;
+	width: 45%;
+	position: relative;
+	color:#8d4bbb;
+	text-shadow: 0.5px 0.5px #00ff7f;
+}
+.option{
+	font-size:30px;
+	text-shadow: 0.5px 0.5px #00ff7f;
+	color: #3d98ff;
+	width: 30%;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+	  monospace;
+	left:25%;
+	position: relative;
+}
+.option:hover{
+	color:#ff9910;
+	transition: 0.2s;
+	border: #00ff7f solid 1px;
+	border-radius: 5px;
+}

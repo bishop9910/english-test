@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英语练习喵</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <h1>英语练习</h1>
+    <code>Made with electron,vue  2025</code>
+    <div class="background"></div>
+    <div class="index-blur"></div>
+    <div id="main">
+        <button @click="words()"><h1>单词模式</h1></button>
+        <button @click="phrases()"><h1>短语模式</h1></button>
+        <button @click="clauses()"><h1>句子模式</h1></button>
+        <br/><br/>
+        <button @click="superWords()"><h1>单词模式(Super)</h1></button>
+        <button @click="wrong()"><h1>错题模式</h1></button>
+    </div>
+</body>
+<script src="./js/vue.min.js"></script>
+<script src="./js/sweetalert.min.js"></script>
+<script src="./js/index_random_background.js"></script>
+<script src="./js/index.js"></script>
+<!-- <script src="./js/check.js"></script> -->
+</html>
