@@ -2900,7 +2900,6 @@ contextBridge.exposeInMainWorld('api', {
         {word: 'budget', meaning: 'n. 预算 v. 编预算，作安排'},
         {word: 'candidate', meaning: 'n. 候选人'},
         {word: 'campus', meaning: 'n. 校园'},
-        {word: 'liberal', meaning: 'a. 慷慨的；丰富的；自由的'},
         {word: 'transform', meaning: 'v. 转变，变革；变换'},
         {word: 'transmit', meaning: 'v. 传播，播送；传递'},
         {word: 'transplant', meaning: 'v. 移植'},
