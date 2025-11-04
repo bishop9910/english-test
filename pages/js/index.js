@@ -5,7 +5,7 @@ new Vue({
         showIcon(){
             var contentHtml = `<div id="info">
                                     <code>
-                                        English-test version:1.7.1<br/>新增四级测试页面 \n2025.11.4
+                                        English-test version:1.7.2<br/>修复bug \n2025.11.4
                                     </code>
                                     <br/>
                                     <p>By bishop9910</p>
