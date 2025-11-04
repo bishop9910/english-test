@@ -1,9 +1,4 @@
-// let wrongData;
-// async function getWrongData(){
-//     wrongData = await api.readMistake()
-// }
-
-const vm = new Vue({
+new Vue({
     el:'#main',
     data(){
         return {

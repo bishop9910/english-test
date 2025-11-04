@@ -2884,6 +2884,12 @@ contextBridge.exposeInMainWorld('api', {
         {word:'venture',meaning:'n.冒险,风险;v.冒险'},
         {word:'nursery',meaning:'n.护士,保育员'},//2025.4.30
     ],
+    fourWords:[
+        {word:'substantial',meaning:'adj.实质的,大量的,坚固的'},
+        {word:'venture',meaning:'n.冒险,风险;v.冒险'},
+        {word:'nursery',meaning:'n.护士,保育员'},
+        {word:'pastime',meaning:'n.消遣,娱乐'},
+    ],
     creatChildWindow: (data) => {
         ipcRenderer.send('create-window',data)
     },

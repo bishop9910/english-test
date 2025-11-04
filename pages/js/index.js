@@ -1,11 +1,11 @@
 //for index.html 2024/10/31
-const vm = new Vue({
+new Vue({
     el:'#main',
     methods:{
         showIcon(){
             var contentHtml = `<div id="info">
                                     <code>
-                                        English-test version:1.6.7<br/>修复了一些bug \n2025.5.24
+                                        English-test version:1.7.1<br/>新增四级测试页面 \n2025.11.4
                                     </code>
                                     <br/>
                                     <p>By bishop9910</p>
@@ -33,6 +33,9 @@ const vm = new Vue({
         },
         superWords(){
             this.openNewWindow('./pages/superWords_pages/main_page.html')
+        },
+        fourWords(){
+            this.openNewWindow('./pages/fourWords_pages/main_page.html')
         },
         phrases(){
             this.openNewWindow('./pages/phrases_pages/main_page.html')

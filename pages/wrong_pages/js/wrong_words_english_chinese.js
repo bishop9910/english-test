@@ -1,7 +1,7 @@
 //To store vocabulary list
 //2024
 //bishop9910
-const vm = new Vue({
+new Vue({
     el:'#main',
     data(){
         return {

@@ -1,4 +1,4 @@
-const vm = new Vue({
+new Vue({
     el:'#main',
     data(){
         return {
