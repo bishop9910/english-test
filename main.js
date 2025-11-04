@@ -13,7 +13,7 @@ function createWindow (path) {
     autoHideMenuBar: true,
     icon: _path.join(__dirname, '/icon.ico'), 
     webPreferences: {
-      devTools: false,
+      devTools: true,
       preload: _path.resolve(__dirname, './preload.js'),//preload.js ,absolute path
     }
   })//config windows
