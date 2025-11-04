@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英语练习喵</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div id="main">
+        <div class="background"></div>
+        <div class="blur"></div>
+        <h1>看中文选英语</h1>
+        <div class="question">{{chinese_question}}</div>
+        <div class="option" @click="optionClick(0)">A. {{A}}</div>
+        <div class="option" @click="optionClick(1)">B. {{B}}</div>
+        <div class="option" @click="optionClick(2)">C. {{C}}</div>
+        <div class="option" @click="optionClick(3)">D. {{D}}</div>
+    </div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script src="../js/sweetalert.min.js"></script>
+<script src="../js/random_background.js"></script>
+<script src="../js/phrases_chinese_english.js"></script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英语练习喵</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div id="main">
+        <div class="background"></div>
+        <div class="index-blur"></div>
+        <h2>短语随机测试</h2>
+        <p>请选择测试模式</p>
+        <button @click="chinese_english()">看中文选英语</button>
+        <button @click="english_chinese()">看英语选中文</button>
+        <p>短语总汇展示</p>
+        <ul>
+            <li v-for="phrase in phrasesList" class="word">{{phrase.phrase}} {{phrase.meaning}}</li>
+        </ul>
+    </div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script src="../js/sweetalert.min.js"></script>
+<script src="../js/random_background.js"></script>
+<script src="../js/check.js"></script>
+<script src="../js/phrases_main_page.js"></script>
+</html>

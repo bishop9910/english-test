@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英语练习喵</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div id="main">
+        <div class="background"></div>
+        <div class="index-blur"></div>
+        <h2>句子默写测试</h2>
+        <button @click="uncompleted()">点此开始默写</button>
+        <p>句子库展示</p>
+        <ul>
+            <li v-for="clause in clausesList" class="word">{{clause.clause}} {{clause.meaning}}</li>
+        </ul>
+    </div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script src="../js/sweetalert.min.js"></script>
+<script src="../js/random_background.js"></script>
+<script src="../js/clauses_main_page.js"></script>
+<script src="../js/check.js"></script>
+<script src="../js/check_clauses.js"></script>
+</html>

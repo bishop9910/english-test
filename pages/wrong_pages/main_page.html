@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英语练习喵</title>
+    <link rel="stylesheet" href="./css/wrong.css">
+    <!-- <link rel="stylesheet" href="./css/load.css"> -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <script src="../js/vue.min.js"></script>
+</head>
+<body>
+    <!-- <div class="load" id="load"><h1>加载中...</h1></div> -->
+    <div id="main">
+        <div class="background"></div>
+        <div class="index-blur"></div>
+
+        <h2>错题本</h2>
+        <p>请选择测试模式</p>
+        <select name="1" id="mode_select" v-model="mode">
+            <option value="words">单词模式</option>
+            <option value="phrases">短语模式</option>
+            <!-- <option value="clauses">句子模式</option> -->
+        </select>
+        <select name="2" id="e_s_mode_select" v-model="e_s_mode">
+            <option value="chinese_english">看汉语选英语(汉译英)</option>
+            <option value="english_chinese">看英语选汉语(英译汉)</option>
+        </select>
+        <button id="start" @click="start">开始测试</button>
+        <h3>错题展示</h3>
+        <div v-if="wrongData">
+            <p>单词</p>
+            <ul>
+                <li v-for="word in wrongData.words" class="word">{{word.word}} {{word.meaning}} 错误次数:{{word.time}}次</li>
+            </ul>
+            <p>短语</p>
+            <ul>
+                <li v-for="phrase in wrongData.phrases" class="word">{{phrase.phrase}} {{phrase.meaning}} 错误次数:{{phrase.time}}次</li>
+            </ul>
+        </div>
+        <div v-else>
+            <h1>Loading</h1>
+        </div>
+        <!-- <p>句子</p>
+        <ul>
+            <li v-for="word in vocabularyList" class="word">{{word.word}} {{word.meaning}}</li>
+        </ul> -->
+    </div>
+</body>
+<script src="./js/index_wrong_random_background.js"></script>
+<script src="../js/sweetalert.min.js"></script>
+<script src="./js/wrong_main_page.js"></script>
+</html>
